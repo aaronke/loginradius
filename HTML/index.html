@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<link rel="shortcut icon" href="">
+	<script type="text/javascript" src="LoginRadius.1.0.js"></script>
+	<script type="text/javascript" src="LoginRadiusSDK.2.0.0.js"></script>
+
+	<!-- intial the login settings -->
+	<script type="text/javascript">
+		var options={};
+		options.login=true;
+
+		LoginRadius_SocialLogin.util.ready(function(){
+			$ui = LoginRadius_SocialLogin.lr_login_settings;
+			$ui.interfacesize="";
+			$ui.apikey ="ea6db6fb-d4dc-4b5b-8aa7-0775c89b8b14";
+			$ui.is_access_token=true;
+			$ui.callback=window.location.href;
+			$ui.lrinterfacecontainer ="UI_container";
+			LoginRadius_SocialLogin.init(options);
+			
+		});
+
+		
+	</script>
+	<!-- Call the logincallback -->
+	<script type="text/javascript">
+	
+		LoginRadiusSDK.setLoginCallback(SuccessLogin);
+			
+		function SuccessLogin(){
+			
+			LoginRadiusSDK.getUserprofile(function (data){
+				/* tell whether login successfully*/
+				window.alert("SuccessLogin");
+				document.getElementById("user_profile").innerHTML=JSON.stringify(data);
+
+			});
+		}
+	</script>
+</head>
+<body>
+
+	<div id="user_profile">
+
+	</div>
+	<div id="UI_container">
+
+	</div>
+
+</body>
+
+</html>

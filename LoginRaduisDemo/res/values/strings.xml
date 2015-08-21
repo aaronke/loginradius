@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoginRaduisDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="LoginRadius_API_key">ea6db6fb-d4dc-4b5b-8aa7-0775c89b8b14</string>
+	<string name="LoginRadius_API_Secret">78304864-5cdd-4c24-ad06-2aa740bfa7f9</string>
+	<string name="smtp_user"></string>
+    <string name="smtp_password"></string>
+    <string name="facebook_app_id">467352643439635</string>
+    <string name="facebook_native_login_button_text">Native Login</string>
+    <string name="listview_login_button_text">Login List</string>
+    
+    <string-array name="API_array">
+        <item>UserProfile</item>
+        <item>UserStatus</item>
+        <item>ContactAPI</item>
+        <item>AlbumAPI</item>
+        <item>AudioAPI</item>
+        <item>CheckinAPI</item>
+        <item>CompanyAPI</item>
+        <item>EventAPI</item>
+        <item>FollowingAPI</item>
+        <item>GroupAPI</item>
+        <item>LikeAPI</item>
+        <item>MentionAPI</item>
+        <item>PhotoAPI</item>
+        <item>PageAPI</item>
+        <item>VideoAPI</item>
+        <item>PostAPI</item>
+    </string-array>
+    
+</resources>
